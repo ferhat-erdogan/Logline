@@ -42,11 +42,17 @@ jobs:
           keyPassword: ${{ secrets.KEY_PASSWORD }}
         continue-on-error: true
 
-      - name: Rename APK to app-release.apk
+      - name: Force Sign with Debug Key if Unsigned
         run: |
           if [ -f "app/build/outputs/apk/release/app-release-unsigned.apk" ]; then
-            mv app/build/outputs/apk/release/app-release-unsigned.apk app/build/outputs/apk/release/app-release.apk
-          elif [ -f "app/build/outputs/apk/release/app-release-signed.apk" ]; then
+            echo "Ozel imza bulunamadi, standart anahtarla imzalanıyor..."
+            # Android SDK icindeki varsayilan debug anahtariyla APK'yi hizlica imzalayip cikartiyoruz
+            apksigner sign --ks $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --ks ~/.android/debug.keystore --ks-pass pass:android --key-pass pass:android --out app/build/outputs/apk/release/app-release.apk app/build/outputs/apk/release/app-release-unsigned.apk
+          fi
+
+      - name: Rename Signed APK to app-release.apk
+        run: |
+          if [ -f "app/build/outputs/apk/release/app-release-signed.apk" ]; then
             mv app/build/outputs/apk/release/app-release-signed.apk app/build/outputs/apk/release/app-release.apk
           fi
 
