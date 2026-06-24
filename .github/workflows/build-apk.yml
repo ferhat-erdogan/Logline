@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [ "main" ]
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -31,15 +34,24 @@ jobs:
       - name: build release apk
         run: ./gradlew assembleRelease --stacktrace
 
-      - name: upload debug apk
-        uses: actions/upload-artifact@v4
-        with:
-          name: app-debug
-          path: app/build/outputs/apk/debug/*.apk
+      # Benzersiz sürüm ismi oluşturmak için tarih ve commit bilgisini alıyoruz
+      - name: Generate Release Tag
+        id: release_tag
+        run: |
+          echo "tag=v$(date +'%Y.%m.%d-%H%M')-${GITHUB_SHA::7}" >> $GITHUB_OUTPUT
 
-      - name: upload release apk
-        uses: actions/upload-artifact@v4
+      # Her başarılı push'ta tamamen yeni ve kalıcı bir Release oluşturur
+      - name: Create Release and Upload APKs
+        uses: softprops/action-gh-release@v2
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         with:
-          name: app-release
-          path: app/build/outputs/apk/release/*.apk
+          tag_name: ${{ steps.release_tag.outputs.tag }}
+          name: "Build ${{ steps.release_tag.outputs.tag }}"
+          draft: false
+          prerelease: false
+          files: |
+            app/build/outputs/apk/debug/*.apk
+            app/build/outputs/apk/release/*.apk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
