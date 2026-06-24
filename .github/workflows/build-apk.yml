@@ -1,4 +1,4 @@
-name: build-apk
+Name: build-apk
 
 on:
   push:
@@ -22,6 +22,9 @@ jobs:
       - name: setup gradle
         uses: gradle/actions/setup-gradle@v4
 
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+
       - name: build debug apk
         run: ./gradlew assembleDebug --stacktrace
 
@@ -39,3 +42,4 @@ jobs:
         with:
           name: app-release
           path: app/build/outputs/apk/release/*.apk
+          
