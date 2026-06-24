@@ -28,20 +28,34 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
 
-      - name: build debug apk
-        run: ./gradlew assembleDebug --stacktrace
-
       - name: build release apk
         run: ./gradlew assembleRelease --stacktrace
 
-      # Benzersiz sürüm ismi oluşturmak için tarih ve commit bilgisini alıyoruz
+      - name: Sign Release APK
+        id: sign_app
+        uses: r0adkll/sign-android-release@v1
+        with:
+          releaseDirectory: app/build/outputs/apk/release
+          signingKeyBase64: ${{ secrets.SIGNING_KEY }}
+          alias: ${{ secrets.ALIAS }}
+          keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
+          keyPassword: ${{ secrets.KEY_PASSWORD }}
+        continue-on-error: true
+
+      - name: Rename APK to app-release.apk
+        run: |
+          if [ -f "app/build/outputs/apk/release/app-release-unsigned.apk" ]; then
+            mv app/build/outputs/apk/release/app-release-unsigned.apk app/build/outputs/apk/release/app-release.apk
+          elif [ -f "app/build/outputs/apk/release/app-release-signed.apk" ]; then
+            mv app/build/outputs/apk/release/app-release-signed.apk app/build/outputs/apk/release/app-release.apk
+          fi
+
       - name: Generate Release Tag
         id: release_tag
         run: |
           echo "tag=v$(date +'%Y.%m.%d-%H%M')-${GITHUB_SHA::7}" >> $GITHUB_OUTPUT
 
-      # Her başarılı push'ta tamamen yeni ve kalıcı bir Release oluşturur
-      - name: Create Release and Upload APKs
+      - name: Create Release and Upload APK
         uses: softprops/action-gh-release@v2
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         with:
@@ -49,9 +63,7 @@ jobs:
           name: "Build ${{ steps.release_tag.outputs.tag }}"
           draft: false
           prerelease: false
-          files: |
-            app/build/outputs/apk/debug/*.apk
-            app/build/outputs/apk/release/*.apk
+          files: app/build/outputs/apk/release/app-release.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
