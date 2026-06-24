@@ -1,0 +1,755 @@
+<resources>
+    <string name="app_name">Logline</string>
+
+
+    //stringResource(id = R.string.)
+
+    <!-- Default General Strings -->
+    <string name="poster_description_appendage">-Poster</string>
+    <string name="poster_description">Poster</string>
+    <string name="star_icon_description">StarRate</string>
+    <string name="menu_icon_description">Open Navigation Drawer</string>
+    <string name="selected_description">Selected</string>
+    <string name="expand_menu_description">Expand Menu</string>
+    <string name="poster_content_description">%1$s-Poster</string>
+    <string name="close_dialog_description">Close Dialog</string>
+    <string name="back_icon_description">Back</string>
+    <string name="sort_icon_description">Sort</string>
+    <string name="filter_icon_description">Filter</string>
+    <string name="more_vert_icon_description">More</string>
+
+
+    <!-- Error -->
+    <string name="load_error_title">Load Error</string>
+    <string name="load_error_text">Something went wrong. Please check your internet connection or try again later.</string>
+    <string name="try_again_text">Try again</string>
+
+
+    <!-- Screen Titles Strings -->
+    <string name="home_text">Home</string>
+    <string name="profile_text">Profile</string>
+    <string name="watchlist_text">Watchlist</string>
+    <string name="search_text">Search</string>
+    <string name="discover_text">Discover</string>
+    <string name="about_text">About</string>
+    <string name="movies_text">Movies</string>
+    <string name="movie_log_text">Add Diary-Entry</string>
+    <string name="my_movies_text">Movies</string>
+    <string name="diary_text">Diary</string>
+    <string name="diary_edit_element_text">Edit Diary-Entry</string>
+    <string name="reviews_text">Reviews</string>
+    <string name="review_detail_text">Review</string>
+    <string name="lists_text">Lists</string>
+    <string name="list_text">List</string>
+    <string name="profile_edit_text">Edit Profile</string>
+    <string name="settings_text">Settings</string>
+    <string name="empty_text"> </string>
+
+
+    <!-- Default Button Strings -->
+    <string name="ok_button_text">OK</string>
+    <string name="save_button_text">Save</string>
+    <string name="discard_button_text">Discard</string>
+    <string name="delete_button_text">Delete</string>
+    <string name="cancel_button_text">Cancel</string>
+    <string name="close_button_text">Close</string>
+
+
+    <!-- AboutView Strings -->
+    <string name="extended_app_name">Logline - Movie App</string>
+    <string name="logline_info">Logline is a native Android Open Source Movie App</string>
+    <string name="logline_github_button_text">Github-Page</string>
+    <string name="tmdb_credits_text">This product uses the TMDB API but is not endorsed or certified by TMDB.</string>
+    <string name="tmdb_terms_of_use_button_text">TMDB Terms of Use</string>
+    <string name="tmdb_api_terms_of_use_button_text">TMDB API Terms of Use</string>
+
+
+    <!-- Watchlist Strings -->
+    <string name="watchlist_no_filter_match_text">No items match your current filters.</string>
+    <string name="watchlist_empty_text">Your watchlist is currently empty.</string>
+
+
+    <!-- Diary Strings -->
+        <!-- Empty Diary Strings -->
+        <string name="diary_no_filter_match_text">No items match your current filters.</string>
+        <string name="diary_empty_text">Your Diary is currently empty.</string>
+
+        <!-- Diary Dialog Strings -->
+        <string name="diary_discard_changes_dialog_title">Discard Changes?</string>
+        <string name="diary_discard_changes_dialog_text">When you continue, changes will be lost.</string>
+        <string name="diary_delete_dialog_title">Delete Diary-Entry</string>
+        <string name="diary_delete_dialog_text">Are you sure you want to delete the diary entry?</string>
+        <string name="diary_edit_review_dialog_title">Edit Review</string>
+        <string name="diary_edit_review_dialog_label_empty">Add Review …</string>
+        <string name="diary_edit_review_dialog_label">Edit Review</string>
+        <!-- Diary Edit Strings -->
+        <string name="diary_edit_date_section_text">Watched</string>
+        <string name="diary_edit_delete_section_text">Delete Diary-Entry</string>
+        <string name="diary_edit_rating_section_rating_text">Rating</string>
+        <string name="diary_edit_rating_section_no_rating_text">No Rating</string>
+        <string name="diary_edit_review_section_text">Add review …</string>
+        <string name="diary_edit_save_toast_text">Diary Entry updated</string>
+        <string name="diary_edit_save_description_text">Diary Entry updated</string>
+        <string name="diary_edit_exit_description_text">Exit Changes</string>
+
+
+    <!-- HomeView Strings -->
+    <string name="popular_movies_title">Popular Movies</string>
+    <string name="top_rated_movies_title">Top Rated Movies</string>
+    <string name="upcoming_movies_title">Upcoming Movies</string>
+
+
+    <!-- List Strings -->
+        <!-- ListsTableView Strings -->
+        <string name="list_table_empty">No Lists created yet.</string>
+        <string name="list_table_add_list_description_text">Add new list</string>
+        <string name="list_add_movie_description_text">Add new movie to list</string>
+        <string name="add_list_dialog_title">New List</string>
+        <string name="list_dialog_text_field_label">List name</string>
+        <string name="delete_list_dialog_title">Delete List</string>
+        <string name="delete_list_dialog_text">Are you sure you want to delete the list?</string>
+        <string name="delete_list_text">Delete List</string>
+        <!-- ListView Strings -->
+        <string name="list_no_filter_match_text">No items match your current filters.</string>
+        <string name="list_empty_text">This List is empty.</string>
+        <string name="list_add_movie_dialog_title">Search Movie to add to list</string>
+        <string name="list_add_movie_dialog_confirm">Add Movie</string>
+        <string name="toast_movie_already_on_list">Movie already on the list!</string>
+        <string name="list_delete_movie_dialog_title">Delete movie from List</string>
+        <string name="list_delete_movie_dialog_text">Are you sure you want to delete the movie from the list?</string>
+        <string name="list_delete_movie_dialog_confirm">Delete Movie</string>
+        <string name="edit_list_text">Edit List</string>
+        <string name="list_bottom_sheet_title">List Settings</string>
+
+
+    <!-- Movie Strings -->
+    <string name="movie_log_toast">Diary Entry Added</string>
+
+    <string name="watchlist_add_toast">Movie was added to Watchlist</string>
+    <string name="watchlist_remove_toast">Movie was removed from Watchlist</string>
+
+    <string name="trailer_button_text">Trailer</string>
+    <string name="reviews_button_text">Reviews</string>
+    <string name="share_button_text">Share</string>
+    <string name="genres_title">Genre:</string>
+    <string name="more_details_title">More Details</string>
+    <string name="production_companies_title">Production Companies:</string>
+    <string name="production_countries_title">Production Countries:</string>
+    <string name="spoken_languages_title">Spoken Languages:</string>
+    <string name="status_title">Status:</string>
+    <string name="budget_title">Budget:</string>
+    <string name="revenue_title">Revenue:</string>
+    <string name="more_like_this_title">More like this</string>
+    <string name="average_rating_title">Average Rating:</string>
+    <string name="source_title">Source: </string>
+    <string name="source_tooltip_description">more info</string>
+    <string name="cast_member_description">Cast Member Image of</string>
+    <string name="crew_member_description">Crew Member Image of</string>
+    <string name="cast_title">Cast</string>
+    <string name="crew_title">Crew</string>
+    <string name="add_to_list_dialog_title">Add movie to list</string>
+    <string name="add_to_list_text">Add to List</string>
+    <string name="add_to_list_dialog_toast">Movie added to List</string>
+    <string name="stream_title">Stream</string>
+    <string name="rent_buy_title">Rent/Buy</string>
+    <string name="other_sites_title">Other Sites</string>
+
+
+    <!-- MoviePublicReviews Strings -->
+    <string name="logline_reviews_title">Logline Reviews</string>
+    <string name="tmdb_reviews_title">TMDB Reviews</string>
+    <string name="no_logline_reviews_text">no Logline reviews yet</string>
+    <string name="no_tmdb_reviews_text">no TMDB reviews yet</string>
+
+
+    <!-- PersonDetails Strings -->
+    <string name="person_image_description">Image of</string>
+    <string name="known_for_title">Known for:</string>
+    <string name="bio_title">Bio:</string>
+
+
+    <!-- Profile Strings -->
+    <string name="favourite_movies_title">FAVOURITE MOVIES</string>
+    <string name="favourite_movies_title2">Favourite Movies</string>
+    <string name="banner_image_title">Banner Image</string>
+    <string name="banner_image_description">Banner</string>
+    <string name="reset_to_default_text">Reset to Default</string>
+    <string name="profile_bio_title">Bio</string>
+    <string name="edit_icon_description">Edit</string>
+    <string name="delete_fav_movie_icon_description">Delete Favourite Movie</string>
+    <string name="profile_image_title">Profile Image</string>
+    <string name="edit_bio_text">Edit Bio</string>
+    <string name="bio_updated_toast">Bio was updated</string>
+    <string name="edit_name_title">Edit Profile Name</string>
+    <string name="name_updated_toast">Profile Name was updated</string>
+    <string name="search_fav_movie_dialog_title">Search Favourite Movie</string>
+
+
+    <!-- MyMovies Strings -->
+    <string name="my_movies_no_filter_match_text">No items match your current filters.</string>
+    <string name="my_movies_empty_text">No watched movies yet.</string>
+
+
+    <!-- Ratings Strings -->
+    <string name="change_rating_text">Change Rating</string>
+    <string name="no_text">No</string>
+    <string name="rating_text">Rating</string>
+
+    <!-- Reviews Strings -->
+    <string name="reviews_no_filter_match_text">No items match your current filters.</string>
+    <string name="reviews_empty_text">Your have not written any reviews yet.</string>
+    <string name="edit_review_icon_description">Edit Review</string>
+
+
+    <!-- Search Strings -->
+    <string name="search_text_field_label">Search Movie</string>
+    <string name="search_icon_description">Search</string>
+    <string name="search_load_error_text">Error Loading search result.</string>
+    <string name="no_search_result_text">No Search Result</string>
+    <string name="no_search_result_text_longer">No Movies found.\n Adjust your search and try again.</string>
+    <string name="search_history_title">Search History</string>
+    <string name="clear_history_title">Clear History</string>
+    <string name="clear_history_text">Do you want to clear the Search History?</string>
+    <string name="clear_label">Clear</string>
+
+
+    <!-- Settings Strings -->
+    <string name="select_country_title">Select Country</string>
+    <string name="country_changed_toast">Select Country</string>
+    <string name="edit_profile_title">Edit Profile</string>
+    <string name="edit_profile_text">Customize your local Profile page. Set profile and banner images, update displayed name and bio, and select your top 4 favorite movies.</string>
+    <string name="export_data_dialog_title">Export App Data</string>
+    <string name="export_data_dialog_text">Export your App data as backup or to transfer it to another device. You can find the exported zip file in the download folder of your device.</string>
+    <string name="export_data_toast">Data was exported</string>
+    <string name="export_data_error_toast">Export failed! Try to allow storage access.</string>
+    <string name="export_button_text">Export</string>
+    <string name="export_title">Export Data</string>
+    <string name="export_text">Export your Logline App data locally as a ZIP file containing up to three separate .db files. Retrieve the file from your downloads folder and utilize it for backup purposes or to transfer your data to another device.</string>
+    <string name="export_file_title">File Name: logline_backup_yyyy-MM-dd_HH-mm-ss.zip</string>
+    <string name="import_title">Import Database</string>
+    <string name="import_text">"Import a previously exported ZIP file, to restore backed-up data. The import file should be a ZIP archive containing up to 3 .db files. This Process will restart your app."</string>
+    <string name="warning_icon_description">Warning</string>
+    <string name="import_warning_text">Please note that the current app data will be permanently replaced after the import process is completed!</string>
+    <string name="import_button_text">Import Data</string>
+    <string name="country_title">Country for Watch Providers</string>
+    <string name="country_text">Select your country to access streaming, rental, and purchase options customized specifically for this location on the movie page.</string>
+
+    <!-- Sort/Filter/Discover Strings -->
+    <string name="sort_filter_title">Sort and Filter</string>
+    <string name="reset_label">reset</string>
+    <string name="reset_capital_label">Reset</string>
+    <string name="sort_by_text">Sort by</string>
+    <string name="genre_text">Genre</string>
+    <string name="decade_year_text">Decade/Year</string>
+    <string name="orig_language_text">Original Language</string>
+    <string name="any_label">Any</string>
+    <string name="select_other_label">Select other</string>
+    <string name="apply_filters_label">Apply Filters</string>
+    <string name="any_year_label">Any Year</string>
+    <string name="any_genre_label">Any Genre</string>
+    <string name="any_Language_label">Any Language</string>
+    <string name="select_language_label">Select a Language</string>
+    <string name="any_country_label">Any Country</string>
+    <string name="select_country_label">Select a Country</string>
+    <string name="length_label">Length</string>
+    <string name="any_length_label">Any Length</string>
+    <string name="feature_film_label">Feature film</string>
+    <string name="short_film_label">Short film</string>
+    <string name="origin_country_label">Origin Country</string>
+    <string name="movie_providers_label">Movie Providers</string>
+    <string name="discover_movies_label">Discover Movies</string>
+    <string name="select_providers_text">Select Movie Providers</string>
+    <string name="any_provider_label">Any Provider</string>
+    <string name="vote_count_text">Vote Count</string>
+    <string name="discovered_movies_title">Discovered Movies</string>
+    <string name="discovered_movies_empty_text">No Movies match your current discover options.</string>
+    <string name="rating_title">Rating</string>
+
+
+
+    <!-- Countries -->
+    <string name="country_AD">Andorra</string>
+    <string name="country_AE">United Arab Emirates</string>
+    <string name="country_AF">Afghanistan</string>
+    <string name="country_AG">Antigua and Barbuda</string>
+    <string name="country_AI">Anguilla</string>
+    <string name="country_AL">Albania</string>
+    <string name="country_AM">Armenia</string>
+    <string name="country_AN">Netherlands Antilles</string>
+    <string name="country_AO">Angola</string>
+    <string name="country_AQ">Antarctica</string>
+    <string name="country_AR">Argentina</string>
+    <string name="country_AS">American Samoa</string>
+    <string name="country_AT">Austria</string>
+    <string name="country_AU">Australia</string>
+    <string name="country_AW">Aruba</string>
+    <string name="country_AZ">Azerbaijan</string>
+    <string name="country_BA">Bosnia and Herzegovina</string>
+    <string name="country_BB">Barbados</string>
+    <string name="country_BD">Bangladesh</string>
+    <string name="country_BE">Belgium</string>
+    <string name="country_BF">Burkina Faso</string>
+    <string name="country_BG">Bulgaria</string>
+    <string name="country_BH">Bahrain</string>
+    <string name="country_BI">Burundi</string>
+    <string name="country_BJ">Benin</string>
+    <string name="country_BM">Bermuda</string>
+    <string name="country_BN">Brunei Darussalam</string>
+    <string name="country_BO">Bolivia</string>
+    <string name="country_BR">Brazil</string>
+    <string name="country_BS">Bahamas</string>
+    <string name="country_BT">Bhutan</string>
+    <string name="country_BU">Burma</string>
+    <string name="country_BV">Bouvet Island</string>
+    <string name="country_BW">Botswana</string>
+    <string name="country_BY">Belarus</string>
+    <string name="country_BZ">Belize</string>
+    <string name="country_CA">Canada</string>
+    <string name="country_CC">Cocos Islands</string>
+    <string name="country_CD">Congo</string>
+    <string name="country_CF">Central African Republic</string>
+    <string name="country_CG">Congo</string>
+    <string name="country_CH">Switzerland</string>
+    <string name="country_CI">Cote D\'Ivoire</string>
+    <string name="country_CK">Cook Islands</string>
+    <string name="country_CL">Chile</string>
+    <string name="country_CM">Cameroon</string>
+    <string name="country_CN">China</string>
+    <string name="country_CO">Colombia</string>
+    <string name="country_CR">Costa Rica</string>
+    <string name="country_CS">Serbia and Montenegro</string>
+    <string name="country_CU">Cuba</string>
+    <string name="country_CV">Cape Verde</string>
+    <string name="country_CX">Christmas Island</string>
+    <string name="country_CY">Cyprus</string>
+    <string name="country_CZ">Czech Republic</string>
+    <string name="country_DE">Germany</string>
+    <string name="country_DJ">Djibouti</string>
+    <string name="country_DK">Denmark</string>
+    <string name="country_DM">Dominica</string>
+    <string name="country_DO">Dominican Republic</string>
+    <string name="country_DZ">Algeria</string>
+    <string name="country_EC">Ecuador</string>
+    <string name="country_EE">Estonia</string>
+    <string name="country_EG">Egypt</string>
+    <string name="country_EH">Western Sahara</string>
+    <string name="country_ER">Eritrea</string>
+    <string name="country_ES">Spain</string>
+    <string name="country_ET">Ethiopia</string>
+    <string name="country_FI">Finland</string>
+    <string name="country_FJ">Fiji</string>
+    <string name="country_FK">Falkland Islands</string>
+    <string name="country_FM">Micronesia</string>
+    <string name="country_FO">Faeroe Islands</string>
+    <string name="country_FR">France</string>
+    <string name="country_GA">Gabon</string>
+    <string name="country_GB">United Kingdom</string>
+    <string name="country_GD">Grenada</string>
+    <string name="country_GE">Georgia</string>
+    <string name="country_GF">French Guiana</string>
+    <string name="country_GH">Ghana</string>
+    <string name="country_GI">Gibraltar</string>
+    <string name="country_GL">Greenland</string>
+    <string name="country_GM">Gambia</string>
+    <string name="country_GN">Guinea</string>
+    <string name="country_GP">Guadaloupe</string>
+    <string name="country_GQ">Equatorial Guinea</string>
+    <string name="country_GR">Greece</string>
+    <string name="country_GS">South Georgia and the South Sandwich Islands</string>
+    <string name="country_GT">Guatemala</string>
+    <string name="country_GU">Guam</string>
+    <string name="country_GW">Guinea-Bissau</string>
+    <string name="country_GY">Guyana</string>
+    <string name="country_HK">Hong Kong</string>
+    <string name="country_HM">Heard and McDonald Islands</string>
+    <string name="country_HN">Honduras</string>
+    <string name="country_HR">Croatia</string>
+    <string name="country_HT">Haiti</string>
+    <string name="country_HU">Hungary</string>
+    <string name="country_ID">Indonesia</string>
+    <string name="country_IE">Ireland</string>
+    <string name="country_IL">Israel</string>
+    <string name="country_IN">India</string>
+    <string name="country_IO">British Indian Ocean Territory</string>
+    <string name="country_IQ">Iraq</string>
+    <string name="country_IR">Iran</string>
+    <string name="country_IS">Iceland</string>
+    <string name="country_IT">Italy</string>
+    <string name="country_JM">Jamaica</string>
+    <string name="country_JO">Jordan</string>
+    <string name="country_JP">Japan</string>
+    <string name="country_KE">Kenya</string>
+    <string name="country_KG">Kyrgyz Republic</string>
+    <string name="country_KH">Cambodia</string>
+    <string name="country_KI">Kiribati</string>
+    <string name="country_KM">Comoros</string>
+    <string name="country_KN">St. Kitts and Nevis</string>
+    <string name="country_KP">North Korea</string>
+    <string name="country_KR">South Korea</string>
+    <string name="country_KW">Kuwait</string>
+    <string name="country_KY">Cayman Islands</string>
+    <string name="country_KZ">Kazakhstan</string>
+    <string name="country_LA">Lao People\'s Democratic Republic</string>
+    <string name="country_LB">Lebanon</string>
+    <string name="country_LC">St. Lucia</string>
+    <string name="country_LI">Liechtenstein</string>
+    <string name="country_LK">Sri Lanka</string>
+    <string name="country_LR">Liberia</string>
+    <string name="country_LS">Lesotho</string>
+    <string name="country_LT">Lithuania</string>
+    <string name="country_LU">Luxembourg</string>
+    <string name="country_LV">Latvia</string>
+    <string name="country_LY">Libyan Arab Jamahiriya</string>
+    <string name="country_MA">Morocco</string>
+    <string name="country_MC">Monaco</string>
+    <string name="country_MD">Moldova</string>
+    <string name="country_ME">Montenegro</string>
+    <string name="country_MG">Madagascar</string>
+    <string name="country_MH">Marshall Islands</string>
+    <string name="country_MK">Macedonia</string>
+    <string name="country_ML">Mali</string>
+    <string name="country_MM">Myanmar</string>
+    <string name="country_MN">Mongolia</string>
+    <string name="country_MO">Macao</string>
+    <string name="country_MP">Northern Mariana Islands</string>
+    <string name="country_MQ">Martinique</string>
+    <string name="country_MR">Mauritania</string>
+    <string name="country_MS">Montserrat</string>
+    <string name="country_MT">Malta</string>
+    <string name="country_MU">Mauritius</string>
+    <string name="country_MV">Maldives</string>
+    <string name="country_MW">Malawi</string>
+    <string name="country_MX">Mexico</string>
+    <string name="country_MY">Malaysia</string>
+    <string name="country_MZ">Mozambique</string>
+    <string name="country_NA">Namibia</string>
+    <string name="country_NC">New Caledonia</string>
+    <string name="country_NE">Niger</string>
+    <string name="country_NF">Norfolk Island</string>
+    <string name="country_NG">Nigeria</string>
+    <string name="country_NI">Nicaragua</string>
+    <string name="country_NL">Netherlands</string>
+    <string name="country_NO">Norway</string>
+    <string name="country_NP">Nepal</string>
+    <string name="country_NR">Nauru</string>
+    <string name="country_NU">Niue</string>
+    <string name="country_NZ">New Zealand</string>
+    <string name="country_OM">Oman</string>
+    <string name="country_PA">Panama</string>
+    <string name="country_PE">Peru</string>
+    <string name="country_PF">French Polynesia</string>
+    <string name="country_PG">Papua New Guinea</string>
+    <string name="country_PH">Philippines</string>
+    <string name="country_PK">Pakistan</string>
+    <string name="country_PL">Poland</string>
+    <string name="country_PM">St. Pierre and Miquelon</string>
+    <string name="country_PN">Pitcairn Island</string>
+    <string name="country_PR">Puerto Rico</string>
+    <string name="country_PS">Palestinian Territory</string>
+    <string name="country_PT">Portugal</string>
+    <string name="country_PW">Palau</string>
+    <string name="country_PY">Paraguay</string>
+    <string name="country_QA">Qatar</string>
+    <string name="country_RE">Reunion</string>
+    <string name="country_RO">Romania</string>
+    <string name="country_RS">Serbia</string>
+    <string name="country_RU">Russia</string>
+    <string name="country_RW">Rwanda</string>
+    <string name="country_SA">Saudi Arabia</string>
+    <string name="country_SB">Solomon Islands</string>
+    <string name="country_SC">Seychelles</string>
+    <string name="country_SD">Sudan</string>
+    <string name="country_SE">Sweden</string>
+    <string name="country_SG">Singapore</string>
+    <string name="country_SH">St. Helena</string>
+    <string name="country_SI">Slovenia</string>
+    <string name="country_SJ">Svalbard &amp; Jan Mayen Islands</string>
+    <string name="country_SK">Slovakia</string>
+    <string name="country_SL">Sierra Leone</string>
+    <string name="country_SM">San Marino</string>
+    <string name="country_SN">Senegal</string>
+    <string name="country_SO">Somalia</string>
+    <string name="country_SR">Suriname</string>
+    <string name="country_SS">South Sudan</string>
+    <string name="country_ST">Sao Tome and Principe</string>
+    <string name="country_SU">Soviet Union</string>
+    <string name="country_SV">El Salvador</string>
+    <string name="country_SY">Syrian Arab Republic</string>
+    <string name="country_SZ">Swaziland</string>
+    <string name="country_TC">Turks and Caicos Islands</string>
+    <string name="country_TD">Chad</string>
+    <string name="country_TF">French Southern Territories</string>
+    <string name="country_TG">Togo</string>
+    <string name="country_TH">Thailand</string>
+    <string name="country_TJ">Tajikistan</string>
+    <string name="country_TK">Tokelau</string>
+    <string name="country_TL">Timor-Leste</string>
+    <string name="country_TM">Turkmenistan</string>
+    <string name="country_TN">Tunisia</string>
+    <string name="country_TO">Tonga</string>
+    <string name="country_TP">East Timor</string>
+    <string name="country_TR">Turkey</string>
+    <string name="country_TT">Trinidad and Tobago</string>
+    <string name="country_TV">Tuvalu</string>
+    <string name="country_TW">Taiwan</string>
+    <string name="country_TZ">Tanzania</string>
+    <string name="country_UA">Ukraine</string>
+    <string name="country_UG">Uganda</string>
+    <string name="country_UM">United States Minor Outlying Islands</string>
+    <string name="country_US">United States of America</string>
+    <string name="country_US_short">USA</string>
+    <string name="country_UY">Uruguay</string>
+    <string name="country_UZ">Uzbekistan</string>
+    <string name="country_VA">Holy See</string>
+    <string name="country_VC">St. Vincent and the Grenadines</string>
+    <string name="country_VE">Venezuela</string>
+    <string name="country_VG">British Virgin Islands</string>
+    <string name="country_VI">US Virgin Islands</string>
+    <string name="country_VN">Vietnam</string>
+    <string name="country_VU">Vanuatu</string>
+    <string name="country_WF">Wallis and Futuna Islands</string>
+    <string name="country_WS">Samoa</string>
+    <string name="country_XC">Czechoslovakia</string>
+    <string name="country_XG">East Germany</string>
+    <string name="country_XI">Northern Ireland</string>
+    <string name="country_XK">Kosovo</string>
+    <string name="country_YE">Yemen</string>
+    <string name="country_YT">Mayotte</string>
+    <string name="country_YU">Yugoslavia</string>
+    <string name="country_ZA">South Africa</string>
+    <string name="country_ZM">Zambia</string>
+    <string name="country_ZR">Zaire</string>
+    <string name="country_ZW">Zimbabwe</string>
+
+    <!-- Languages -->
+    <string name="language_xx">No Language</string>
+    <string name="language_aa">Afar</string>
+    <string name="language_af">Afrikaans</string>
+    <string name="language_ak">Akan</string>
+    <string name="language_an">Aragonese</string>
+    <string name="language_as">Assamese</string>
+    <string name="language_av">Avaric</string>
+    <string name="language_ae">Avestan</string>
+    <string name="language_ay">Aymara</string>
+    <string name="language_az">Azerbaijani</string>
+    <string name="language_ba">Bashkir</string>
+    <string name="language_bm">Bambara</string>
+    <string name="language_bn">Bengali</string>
+    <string name="language_bi">Bislama</string>
+    <string name="language_bo">Tibetan</string>
+    <string name="language_bs">Bosnian</string>
+    <string name="language_br">Breton</string>
+    <string name="language_ca">Catalan</string>
+    <string name="language_cs">Czech</string>
+    <string name="language_ch">Chamorro</string>
+    <string name="language_ce">Chechen</string>
+    <string name="language_cu">Slavic</string>
+    <string name="language_cv">Chuvash</string>
+    <string name="language_kw">Cornish</string>
+    <string name="language_co">Corsican</string>
+    <string name="language_cr">Cree</string>
+    <string name="language_cy">Welsh</string>
+    <string name="language_da">Danish</string>
+    <string name="language_de">German</string>
+    <string name="language_dv">Divehi</string>
+    <string name="language_dz">Dzongkha</string>
+    <string name="language_en">English</string>
+    <string name="language_eo">Esperanto</string>
+    <string name="language_et">Estonian</string>
+    <string name="language_eu">Basque</string>
+    <string name="language_fo">Faroese</string>
+    <string name="language_fj">Fijian</string>
+    <string name="language_fi">Finnish</string>
+    <string name="language_fr">French</string>
+    <string name="language_fy">Frisian</string>
+    <string name="language_ff">Fulah</string>
+    <string name="language_gd">Gaelic</string>
+    <string name="language_ga">Irish</string>
+    <string name="language_gl">Galician</string>
+    <string name="language_gv">Manx</string>
+    <string name="language_gn">Guarani</string>
+    <string name="language_gu">Gujarati</string>
+    <string name="language_ht">Haitian; Haitian Creole</string>
+    <string name="language_ha">Hausa</string>
+    <string name="language_sh">Serbo-Croatian</string>
+    <string name="language_hz">Herero</string>
+    <string name="language_ho">Hiri Motu</string>
+    <string name="language_hr">Croatian</string>
+    <string name="language_hu">Hungarian</string>
+    <string name="language_ig">Igbo</string>
+    <string name="language_io">Ido</string>
+    <string name="language_ii">Yi</string>
+    <string name="language_iu">Inuktitut</string>
+    <string name="language_ie">Interlingue</string>
+    <string name="language_ia">Interlingua</string>
+    <string name="language_id">Indonesian</string>
+    <string name="language_ik">Inupiaq</string>
+    <string name="language_is">Icelandic</string>
+    <string name="language_it">Italian</string>
+    <string name="language_jv">Javanese</string>
+    <string name="language_ja">Japanese</string>
+    <string name="language_kl">Kalaallisut</string>
+    <string name="language_kn">Kannada</string>
+    <string name="language_ks">Kashmiri</string>
+    <string name="language_ka">Georgian</string>
+    <string name="language_kr">Kanuri</string>
+    <string name="language_kk">Kazakh</string>
+    <string name="language_km">Khmer</string>
+    <string name="language_ki">Kikuyu</string>
+    <string name="language_rw">Kinyarwanda</string>
+    <string name="language_ky">Kirghiz</string>
+    <string name="language_kv">Komi</string>
+    <string name="language_kg">Kongo</string>
+    <string name="language_ko">Korean</string>
+    <string name="language_kj">Kuanyama</string>
+    <string name="language_ku">Kurdish</string>
+    <string name="language_lo">Lao</string>
+    <string name="language_la">Latin</string>
+    <string name="language_lv">Latvian</string>
+    <string name="language_li">Limburgish</string>
+    <string name="language_ln">Lingala</string>
+    <string name="language_lt">Lithuanian</string>
+    <string name="language_lb">Letzeburgesch</string>
+    <string name="language_lu">Luba-Katanga</string>
+    <string name="language_lg">Ganda</string>
+    <string name="language_mh">Marshall</string>
+    <string name="language_ml">Malayalam</string>
+    <string name="language_mr">Marathi</string>
+    <string name="language_mg">Malagasy</string>
+    <string name="language_mt">Maltese</string>
+    <string name="language_mo">Moldavian</string>
+    <string name="language_mn">Mongolian</string>
+    <string name="language_mi">Maori</string>
+    <string name="language_ms">Malay</string>
+    <string name="language_my">Burmese</string>
+    <string name="language_na">Nauru</string>
+    <string name="language_nv">Navajo</string>
+    <string name="language_nr">Ndebele</string>
+    <string name="language_nd">Ndebele</string>
+    <string name="language_ng">Ndonga</string>
+    <string name="language_ne">Nepali</string>
+    <string name="language_nl">Dutch</string>
+    <string name="language_nn">Norwegian Nynorsk</string>
+    <string name="language_nb">Norwegian Bokmål</string>
+    <string name="language_no">Norwegian</string>
+    <string name="language_ny">Chichewa; Nyanja</string>
+    <string name="language_oc">Occitan</string>
+    <string name="language_oj">Ojibwa</string>
+    <string name="language_or">Oriya</string>
+    <string name="language_om">Oromo</string>
+    <string name="language_os">Ossetian; Ossetic</string>
+    <string name="language_pa">Punjabi</string>
+    <string name="language_pi">Pali</string>
+    <string name="language_pl">Polish</string>
+    <string name="language_pt">Portuguese</string>
+    <string name="language_qu">Quechua</string>
+    <string name="language_rm">Raeto-Romance</string>
+    <string name="language_ro">Romanian</string>
+    <string name="language_rn">Rundi</string>
+    <string name="language_ru">Russian</string>
+    <string name="language_sg">Sango</string>
+    <string name="language_sa">Sanskrit</string>
+    <string name="language_si">Sinhalese</string>
+    <string name="language_sk">Slovak</string>
+    <string name="language_sl">Slovenian</string>
+    <string name="language_se">Northern Sami</string>
+    <string name="language_sm">Samoan</string>
+    <string name="language_sn">Shona</string>
+    <string name="language_sd">Sindhi</string>
+    <string name="language_so">Somali</string>
+    <string name="language_st">Sotho</string>
+    <string name="language_es">Spanish</string>
+    <string name="language_sq">Albanian</string>
+    <string name="language_sc">Sardinian</string>
+    <string name="language_sr">Serbian</string>
+    <string name="language_ss">Swati</string>
+    <string name="language_su">Sundanese</string>
+    <string name="language_sw">Swahili</string>
+    <string name="language_sv">Swedish</string>
+    <string name="language_ty">Tahitian</string>
+    <string name="language_ta">Tamil</string>
+    <string name="language_tt">Tatar</string>
+    <string name="language_te">Telugu</string>
+    <string name="language_tg">Tajik</string>
+    <string name="language_tl">Tagalog</string>
+    <string name="language_th">Thai</string>
+    <string name="language_ti">Tigrinya</string>
+    <string name="language_to">Tonga</string>
+    <string name="language_tn">Tswana</string>
+    <string name="language_ts">Tsonga</string>
+    <string name="language_tk">Turkmen</string>
+    <string name="language_tr">Turkish</string>
+    <string name="language_tw">Twi</string>
+    <string name="language_ug">Uighur</string>
+    <string name="language_uk">Ukrainian</string>
+    <string name="language_ur">Urdu</string>
+    <string name="language_uz">Uzbek</string>
+    <string name="language_ve">Venda</string>
+    <string name="language_vi">Vietnamese</string>
+    <string name="language_vo">Volapük</string>
+    <string name="language_wa">Walloon</string>
+    <string name="language_wo">Wolof</string>
+    <string name="language_xh">Xhosa</string>
+    <string name="language_yi">Yiddish</string>
+    <string name="language_za">Zhuang</string>
+    <string name="language_zu">Zulu</string>
+    <string name="language_ab">Abkhazian</string>
+    <string name="language_zh">Mandarin</string>
+    <string name="language_ps">Pushto</string>
+    <string name="language_am">Amharic</string>
+    <string name="language_ar">Arabic</string>
+    <string name="language_be">Belarusian</string>
+    <string name="language_bg">Bulgarian</string>
+    <string name="language_cn">Cantonese</string>
+    <string name="language_mk">Macedonian</string>
+    <string name="language_ee">Ewe</string>
+    <string name="language_el">Greek</string>
+    <string name="language_fa">Persian</string>
+    <string name="language_he">Hebrew</string>
+    <string name="language_hi">Hindi</string>
+    <string name="language_hy">Armenian</string>
+    <string name="language_yo">Yoruba</string>
+
+    <!-- Genres -->
+    <string name="genre_28">Action</string>
+    <string name="genre_12">Adventure</string>
+    <string name="genre_16">Animation</string>
+    <string name="genre_35">Comedy</string>
+    <string name="genre_80">Crime</string>
+    <string name="genre_99">Documentary</string>
+    <string name="genre_18">Drama</string>
+    <string name="genre_10751">Family</string>
+    <string name="genre_14">Fantasy</string>
+    <string name="genre_36">History</string>
+    <string name="genre_27">Horror</string>
+    <string name="genre_10402">Music</string>
+    <string name="genre_9648">Mystery</string>
+    <string name="genre_10749">Romance</string>
+    <string name="genre_878">Science Fiction</string>
+    <string name="genre_53">Thriller</string>
+    <string name="genre_10770">TV Movie</string>
+    <string name="genre_10752">War</string>
+    <string name="genre_37">Western</string>
+
+    <!-- Sort Options -->
+    <string name="sort_by_added_desc">Date Added (Newest first)</string>
+    <string name="sort_by_added_asc">Date Added (Oldest first)</string>
+    <string name="sort_by_title_asc">Title (A-Z)</string>
+    <string name="sort_by_title_desc">Title (Z-A)</string>
+    <string name="sort_by_release_date_desc">Release Date (Newest first)</string>
+    <string name="sort_by_release_date_asc">Release Date (Oldest first)</string>
+    <string name="sort_by_rating_desc">Rating (10–1)</string>
+    <string name="sort_by_rating_asc">Rating (1–10)</string>
+    <string name="sort_by_popularity_desc">Popularity (Most Popular first)</string>
+    <string name="sort_by_popularity_asc">Popularity (Least Popular first)</string>
+    <string name="sort_by_vote_average_desc">Average Rating (Highest first)</string>
+    <string name="sort_by_vote_average_asc">Average Rating (Lowest first)</string>
+    <string name="sort_by_position_asc">List order</string>
+    <string name="sort_by_time_updated">When updated</string>
+    <string name="sort_by_list_name_asc">List name (A-Z)</string>
+    <string name="sort_by_list_name_desc">List name (Z-A)</string>
+    <string name="sort_by_revenue_desc">Revenue</string>
+
+    //stringResource(id = R.string.)
+
+</resources>
