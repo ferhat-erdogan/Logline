@@ -25,11 +25,18 @@ jobs:
       - name: setup gradle
         uses: gradle/actions/setup-gradle@v4
 
+      - name: decode keystore
+        run: echo "${{ secrets.SIGNING_KEY }}" | base64 --decode > keystore.jks
+
       - name: build debug apk
         run: ./gradlew assembleDebug --stacktrace
 
       - name: build release apk
         run: ./gradlew assembleRelease --stacktrace
+        env:
+          SIGNING_KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+          SIGNING_KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+          SIGNING_STORE_PASSWORD: ${{ secrets.KEY_STORE_PASSWORD }}
 
       - name: upload debug apk
         uses: actions/upload-artifact@v4
