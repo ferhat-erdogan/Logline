@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Logline</string>
+    <string name="app_name">Film Arşivi</string>
 
 
     //stringResource(id = R.string.)
@@ -26,7 +26,7 @@
 
 
     <!-- Screen Titles Strings -->
-    <string name="home_text">Home</string>
+    <string name="home_text">Keşfet</string>
     <string name="profile_text">Profile</string>
     <string name="watchlist_text">Watchlist</string>
     <string name="search_text">Search</string>
