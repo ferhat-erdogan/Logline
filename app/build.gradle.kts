@@ -21,14 +21,15 @@ android {
         versionName = "1.0.3"
     }
 
-    signingConfigs {
-        create("release") {
-            keyAlias = System.getenv("SIGNING_KEY_ALIAS")
-            keyPassword = System.getenv("SIGNING_KEY_PASSWORD")
-            storeFile = rootProject.file("keystore.jks")
-            storePassword = System.getenv("SIGNING_STORE_PASSWORD")
-        }
+    
+signingConfigs {
+    create("release") {
+        keyAlias = System.getenv("SIGNING_KEY_ALIAS") ?: ""
+        keyPassword = System.getenv("SIGNING_KEY_PASSWORD") ?: ""
+        storeFile = rootProject.file("keystore.jks").takeIf { it.exists() }
+        storePassword = System.getenv("SIGNING_STORE_PASSWORD") ?: ""
     }
+}
 
     buildTypes {
         debug {
